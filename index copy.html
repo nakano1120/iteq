@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="Shift_JIS">
+    <title>snow_sample</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <style>
+      body{
+        background-image:url("bgimage.png");
+      }
+    </style>
+  </head>
+  <body  text="#ffffff">
+    <script type="text/javascript" src="snowfall.jquery.js"></script>
+    <script type="text/javascript">
+      let image="image.png"
+
+      jQuery(document).snowfall({
+        flakeCount : 80,			// 要素の数
+        flakeColor : '#FFF',		// 要素の色
+        flakeIndex : 999999,		// 要素のz-index
+        minSize : 50,				// 要素の最小サイズ
+        maxSize : 300,				// 要素の最大サイズ
+        minSpeed : 3,				// 要素の最小落下スピード
+        maxSpeed : 8,				// 要素の最大落下スピード
+        round : false,				// 要素に丸みを持たせる？
+        shadow : false,     		// 要素に影をつける？
+        //collection : 'div'		// 要素を指定の要素に積もらせる設定(画像を設定してもflakeColorで指定した要素の色が積もります)
+        image : ['image.png','debit.png','san.png','aaa.png']		// 要素を指定の画像に変更
+      });
+    </script>
+  </body>
+</html>

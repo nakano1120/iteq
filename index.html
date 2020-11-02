@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h1>磯子区スタンプラリー</h1>
+        <div id="app">
+            {{ mes }}
+        </div>
+    </div>
+    <script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            mes: 'Hello Vue!'
+        }
+    })
+    </script>
+</body>
+</html>
